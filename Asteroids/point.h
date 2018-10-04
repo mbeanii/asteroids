@@ -53,7 +53,6 @@ public:
    const Point & operator = (const Point & rhs);
 
    // I changed these to protected... I need to inherit them!
-   // (Like Christlike attributes)
 protected:
    float x;           // horizontal position
    float y;           // vertical position

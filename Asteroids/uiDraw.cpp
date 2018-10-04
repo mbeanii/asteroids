@@ -317,10 +317,12 @@ void drawDot(const Point & point)
    glBegin(GL_POINTS);
 
    // Go...
+   //glColor3f(1, 0, 0); // hard coded some color for bullets becuase color is broken elsewhere.
    glVertex2f(point.getX(),     point.getY()    );
    glVertex2f(point.getX() + 1, point.getY()    );
    glVertex2f(point.getX() + 1, point.getY() + 1);
    glVertex2f(point.getX(),     point.getY() + 1);
+   //glColor3f(1.0, 1.0, 1.0); // reset to white
 
    // Done!  OK, that was a bit too dramatic
    glEnd();

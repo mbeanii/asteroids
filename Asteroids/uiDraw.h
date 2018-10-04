@@ -30,9 +30,9 @@ public:
       rint = (hex >> 16) & 0xff;
       gint = (hex >> 8) & 0xff;
       bint = hex & 0xff;
-      rfloat = (rint / 255);
-      gfloat = (gint / 255);
-      bfloat = (bint / 255);
+      rfloat = (rint / 255.0);
+      gfloat = (gint / 255.0);
+      bfloat = (bint / 255.0);
    }
 
    int getInt(char color)

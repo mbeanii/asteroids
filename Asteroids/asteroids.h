@@ -28,11 +28,11 @@
 #define SAFE_DISTANCE 100
 #define POWERUP_CHANCE 15
 
-#define COL_SHIP 0x4A6A5D// 0x883738
+#define COL_SHIP  0x4A6A5D// 0x883738
 #define COL_ROCK  0x4A6A5D
 #define COL_SCORE 0x703C5A
 #define COL_PWRUP 0x517335
-#define COL_BG    0x342417
+#define COL_BG    0x000000
 
 enum inertia_t {ROCK, SHIP, BULLET, POWERUP};
 
@@ -148,6 +148,7 @@ public:
             initialize();
          }
    }
+
 private:
    std::list <Inertia *> objects;
    int numRocks;
